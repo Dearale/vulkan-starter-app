@@ -33,6 +33,18 @@ If you wish to build in `release` mode, change `debug` to `release`.
 
 If changes are made (added/removed files), or if you want to regenerate project files, rerun the command above.
 
+### VS Code IntelliSense
+
+Install the recommended **C/C++** and **CMake Tools** extensions. The workspace
+settings enable C++ IntelliSense and semantic highlighting, and use CMake Tools
+to supply the compiler, C++ standard, defines and dependency include directories.
+
+Run **CMake: Select Configure Preset** and choose `msvc-debug` for Visual Studio
+2022 on Windows, `mingw-debug` for MinGW, or `debug` for GCC/Clang with Ninja.
+Then run **CMake: Configure** to download dependencies and initialize IntelliSense.
+If the workspace was already open when these settings were added, run
+**Developer: Reload Window** first.
+
 <ins>**3. Building**</ins>
 
 To build the project, use the line below. You are most likely using `debug` preset, so
